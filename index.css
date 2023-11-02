@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.global {
+    max-width: 700px;
+}
+
+section h2 {
+    color: hsl(228, 12%, 48%);
+    opacity: 0.7;
+    letter-spacing: 0.4pc;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+section h1 {
+    color: hsl(212, 21%, 14%);
+    padding-top: 0.5pc;
+    font-size: 2rem;
+}
+
+section p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7rem;
+    letter-spacing: 0.6px;
+    padding-bottom: 1rem;
+}
+
+.price,
+h1 {
+    font-family: "Fraunces", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding-bottom: 1rem;
+}
+
+section ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section ul li:first-child {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+section ul li:last-child {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-family: inherit;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    transition: 2s;
+    cursor: pointer;
+    padding-top: 1pc;
+    margin-top: 0.8pc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.global .btn:hover {
+    background-color: hsl(159, 39%, 17%);
+}
+
+section:first-child img {
+    border-radius: 0.8rem 0.8rem 0 0;
+    height: 100%;
+}
+
+section:last-child {
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    margin: -2px;
+    border-radius: 0 0 0.8rem 0.8rem;
+
+}
+
+
+@media (min-width: 500px) {
+    .global {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .global section:first-child img {
+        border-radius: 0.625rem 0 0 0.625rem;
+        /* height: 500px;
+        */
+
+    }
+
+    .global section:last-child {
+        border-radius: 0 0.625rem 0.625rem 0;
+        margin-top: 0;
+        height: fit-content;
+    }
+
+    .global p {
+        margin-bottom: 1rem;
+    }
+
+    .global ul {
+        margin-bottom: 1rem;
+    }
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
